@@ -58,11 +58,6 @@
     color: var(--blue);
   }
 
-  &__link:is-active {
-    position: relative;
-    color: var(--blue);
-  }
-
   &__link.is-active::after {
     content: '';
     position: absolute;

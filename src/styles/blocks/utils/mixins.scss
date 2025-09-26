@@ -3,5 +3,5 @@
 }
 
 @mixin transition-300ms($properties) {
-  transition: #{join($properties, ', ')} 0.3s ease;
+  transition: #{list.join($properties, ', ')} 0.3s ease;
 }

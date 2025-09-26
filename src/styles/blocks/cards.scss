@@ -12,6 +12,16 @@
 
   @include transition-300ms(transform);
 
+    &__title {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: rgba(6, 11, 53, 1);
+
+    @include transition-300ms(color);
+  }
+
   &:hover {
     transform: scale(1.2);
 
@@ -31,16 +41,6 @@
     flex-direction: column;
     width: 166px;
     padding-bottom: 14px;
-  }
-
-  &__title {
-    font-family: Roboto, sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    color: rgba(6, 11, 53, 1);
-
-    @include transition-300ms(color);
   }
 
   &__product-code {
