@@ -1,10 +1,11 @@
+@use '/src/styles/blocks/utils/variables' as *;
 .button {
   box-sizing: border-box;
   width: $content-width;
   height: 40px;
   border-radius: 5px;
-  background: #00acdc;
-  border: 1px solid #00acdc;
+  background: var($link-color);
+  border: 1px solid var($link-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +14,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: rgba(243, 243, 243, 1);
+  color: var($button-text-color);
 
   &:hover {
-    background-color: rgba(243, 243, 243, 1);
-    color: #00acdc;
+    background-color: var($button-text-color);
+    color: var($link-color);
   }
 }
